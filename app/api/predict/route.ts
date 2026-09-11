@@ -1,9 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-<<<<<<< HEAD
-const MODEL_API_URL = process.env.MODEL_API_URL ?? "https://churn-prediction-api-yp2i.onrender.com/";
-=======
-
+const MODEL_API_URL = process.env.MODEL_API_URL ?? "https://churn-prediction-api-yp2i.onrender.com";
 
 type ChurnInput = {
   creditScore: number;

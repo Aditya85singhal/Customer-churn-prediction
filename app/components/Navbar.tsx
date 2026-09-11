@@ -1,3 +1,5 @@
+import ThemeToggle from "./ThemeToggle";
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-10 border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur">
@@ -24,6 +26,7 @@ export default function Navbar() {
           >
             GitHub
           </a>
+          <ThemeToggle />
         </nav>
       </div>
     </header>

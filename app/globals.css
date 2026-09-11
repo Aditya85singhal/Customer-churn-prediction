@@ -18,13 +18,33 @@
 
   --font-display: var(--font-display);
   --font-body: var(--font-body);
+
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f7f5f1;
+  --panel: #ffffff;
+  --panel-raised: #f1efe9;
+  --border: #e1ddd3;
+  --text: #1b1f27;
+  --text-muted: #5c6472;
+  --text-faint: #8a92a0;
+
+  --brand: #c97d33;
+  --brand-dim: #a8763f;
+
+  --risk-low: #23886b;
+  --risk-mid: #a8791f;
+  --risk-high: #c24a5f;
+
+  color-scheme: light;
 }
 
 @theme inline {
   --color-bg: var(--bg);
   --color-panel: var(--panel);
   --color-border: var(--border);
-  --color-text: var(--text);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
 }
@@ -37,6 +57,7 @@ html,
 body {
   background: var(--bg);
   color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 body {
@@ -64,7 +85,7 @@ h3,
   background: var(--panel-raised);
   color: var(--text);
   outline: none;
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .input:focus {
